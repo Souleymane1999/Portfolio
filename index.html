@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>souleymane boubacar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="title">Mon Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="right">
+            <a href="#">Home</a>
+            <a href="#">Works</a>
+            <a href="#">Skills</a>
+        </div>
+    </nav>
+
+    <div class="presentation">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./moi.jpg" alt="Photo de souleymane boubacar">
+                </div>
+                <div class="flip-card-back">
+                    <h2>souleymane boubacar</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Hi, I'm souleymane boubacar </h2>
+            <h3></h3>
+            <p class="description">
+                I'm a passionate web developer with over 5 years of experience in creating responsive and user-friendly
+                websites. I specialize in fullstack development, particularly using Ruby on Rails to build robust,
+                scalable web applications.
+            </p>
+            <div class="btns">
+                <a href="#">Contact Me</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">CV</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+    <div class="competences">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./html5-original.svg" alt="">
+                    <img src="./css3-original.svg" alt="" class="top">
+                </div>
+                <div class="bottom">
+                    <h3>HTML/CSS</h3>
+                    <p>Proficient in creating semantic, accessible HTML and CSS, with a strong emphasis on writing
+                        clean, maintainable, and well-structured code.</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./rails-original-wordmark.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>Ruby on Rails</h3>
+                    <p>Experienced in using Ruby on Rails to build robust, scalable web applications with a focus on
+                        convention over configuration.</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./vuejs-original.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>Vue.js</h3>
+                    <p>Proficient in developing dynamic, single-page applications using Vue.js, with a focus on
+                        modularity and performance.</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./javascript-original.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>JavaScript</h3>
+                    <p>Proficient in using vanilla JavaScript and popular frameworks and libraries to create interactive
+                        and dynamic web applications.</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./tailwindcss-original.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>Tailwind CSS</h3>
+                    <p>Skilled in using Tailwind CSS to create fast and responsive web interfaces, with a focus on
+                        utility classes and design consistency..</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./php-original.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>PHP</h3>
+                    <p>Experienced in using PHP to develop server-side logic, dynamic web pages, and interact with
+                        databases..</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img src="./nodejs-original.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>Node.js</h3>
+                    <p>Skilled in using Node.js for building scalable network applications, server-side scripting, and
+                        developing backend services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="works competences">
+        <h2>My Works</h2>
+        <div class="skills">
+            <div class="skill">
+                <div class="imgs">
+                    <img class="img-work" src="" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>Calculatrice</h3>
+                    <p>A mini calculator performing basic mathematical operations: addition, subtraction, division,
+                        multiplication.</p>
+
+                    <button class="view">View Project</button>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img class="img-work" src="" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>DRAWBOXES</h3>
+                    <p>Game consisting of drawing by placing boxes, similar to object pixelation.</p>
+                    <button class="view">View Project</button>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="imgs">
+                    <img class="img-work" src="" alt="">
+                </div>
+                <div class="bottom">
+                    <h3>RANDOM COLOR</h3>
+                    <p>Displays a CSS color randomly.</p>
+                    <button class="view">View Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <img src="./images.jpg" alt="Image 1">
+        <img src="./images (1).jpg" alt="Image 2" >
+        <img src="./images (2).jpg" alt="Image 3" class="gallery-item">
+        <img src="./images (3).jpg" alt="Image 4" class="gallery-item">
+       
+    </div>
+
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content">
+</div>
+
+    
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./img1.jpg" alt="Image 1">
+            <div class="text">
+                <h2 class="typewriter">Bienvenue sur mon Portfolio</h2>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img2.jpg" alt="Image 2">
+            <div class="text">
+                <h2 class="typewriter">Développeur Web Passionné</h2>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img3.jpg" alt="Image 3">
+            <div class="text">
+                <h2 class="typewriter">Créons des Projets Ensemble</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pagination et navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+
+
+
+<div class="pricing-container">
+    <h2>My Tarification </h2>
+    <div class="toggle-container">
+        <span>Mensuel</span>
+        <label class="switch">
+            <input type="checkbox" id="togglePricing">
+            <span class="slider"></span>
+        </label>
+        <span>Annuel</span>
+    </div>
+
+    <div class="pricing-cards">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Basic</h3>
+                    <p class="price"><span class="monthly">$10</span><span class="yearly">$100</span></p>
+                    <button class="btn">Choisir</button>
+                </div>
+                <div class="card-back">
+                    <h3>Basic</h3>
+                    <p>Accès aux fonctionnalités de base.</p>
+                    <p>Support limité.</p>
+                    <button class="btn">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Pro</h3>
+                    <p class="price"><span class="monthly">$20</span><span class="yearly">$200</span></p>
+                    <button class="btn">Choisir</button>
+                </div>
+                <div class="card-back">
+                    <h3>Pro</h3>
+                    <p>Accès complet + support premium.</p>
+                    <p>Intégration avancée.</p>
+                    <button class="btn">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Premium</h3>
+                    <p class="price"><span class="monthly">$30</span><span class="yearly">$300</span></p>
+                    <button class="btn">Choisir</button>
+                </div>
+                <div class="card-back">
+                    <h3>Premium</h3>
+                    <p>Accès total + support VIP 24/7.</p>
+                    <p>Fonctionnalités exclusives.</p>
+                    <button class="btn">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    <div class="contact competences">
+        <h2>Contact Me</h2>
+        <p>Have a question or want to work together? Feel free to get in touch.</p>
+        <form action="post">
+            <div class="input">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="input">
+                <label for="nammessagee">Message</label>
+                <input type="text" id="message">
+            </div>
+            <button class="view">Envoyer</button>
+        </form>
+    </div> 
+
+
+
+      <!-- <section class="about-me">
+        <div class="about-class">
+            <div class="about">
+                <div class="title">About Me</div>
+                <p>Here's a little bit about me and my experience.</p>
+            </div>
+         <div class="about-paragraph">
+                <p>
+                    I'm a web developer with 5 years of experience building websites and web applications. I specialize in front-end development with a focus on clean,
+                    responsive design and user-friendly interfaces.
+                </p>
+                <p>
+                    I have experience with a range of web technologies, including HTML, CSS, JavaScript, and popular 
+                    frameworks like React and Vue. I'm also skilled in graphic design and have experience with Adobe Creative Suite.
+                </p>
+                <p>
+                    When I'm not coding, you can usually find me hiking in the mountains or trying out new restaurants 
+                    around town. I'm always looking for new challenges and opportunities to learn and grow as a developer.
+                </p>
+            </div> 
+        </div>
+    </section>--> 
+
+    <section class="footer">
+        <p>Copyright © 2025 Web Developer Portfolio | All rights reserved.</p>
+     </section>
+
+    <!-- Swiper.js JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+
+</html>

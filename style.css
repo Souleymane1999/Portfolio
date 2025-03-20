@@ -1,0 +1,674 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 5px 5% 5px 5%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.navbar .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    transition: .3s ease;
+}
+
+.navbar .right > a:hover {
+    color: #ff9800;
+}
+
+.presentation {
+    background-color: #ff9800;
+    height: auto; /* Ajuster la hauteur pour qu'elle s'adapte au contenu */
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: row; /* Garder les éléments côte à côte */
+}
+
+.presentation .flip-card {
+    margin-right: 20px; /* Espacement entre l'image et la description */
+}
+
+
+
+.presentation .right {
+    width: 60%;
+}
+
+.presentation .right h2,
+.presentation .right h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.presentation .right p {
+    line-height: 1.2;
+    padding-bottom: 20px; /* Espacement plus large entre le texte et les boutons */
+}
+
+.presentation .right .btns {
+    display: flex;
+    flex-direction: column; /* Aligner les boutons verticalement */
+    gap: 10px; /* Espacement entre les boutons */
+}
+
+.presentation .right .btns a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 0.8em;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: .3s ease;
+}
+
+.presentation .right .btns a:hover {
+    transform: translateY(-10px);
+    opacity: .8;
+}
+
+.presentation img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.competences h2 {
+    font-size: 30px;
+    font-weight: 809000;
+}
+
+.competences .skills {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6% 0 6%;
+    flex-wrap: wrap;
+}
+
+.competences .skills .skill {
+    background: white;
+    width: 32%;
+    height: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+    transition: .3s ease-in-out;
+}
+
+.competences .skills .skill:hover {
+    transform: scale(1.05);
+}
+
+.competences .skill .imgs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.competences .skill .imgs img {
+    width: 45x;
+    height: 45px;
+}
+
+.competences .skills .skill h3 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.competences .skills .skill p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.works .skills .skill {
+    height: auto;
+}
+
+.works .skills .skill .img-work {
+    width: 150px;
+    height: auto;
+}
+
+
+.about-me
+{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: white;
+}
+
+.about
+{
+    margin-bottom: 2rem;
+}
+.about-class
+{
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-paragraph
+{
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.footer
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 );
+    text-align: center;
+    color: white;
+}
+
+
+.view {
+    font-size: 16px;
+    background: rgb(27, 134, 228);
+    color: white;
+    padding: 1rex;
+    border: none;
+    border-radius: 5px;
+}
+
+form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+form .input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+}
+
+form .input input {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(142, 158, 173, .9);
+}
+.flip-card {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px; /* Effet 3D */
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Rotation au survol */
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.flip-card-back {
+    background: rgb(92, 207, 74);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 12px;
+    padding: 15px;
+}
+/* Navbar Sticky & Responsive */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background: rgb(91, 192, 247);
+    box-shadow: 0px 4px 10px rgba(182, 29, 29, 0.2);
+}
+
+/* Liens Navbar */
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.right a:hover {
+    color: cyan;
+}
+
+/* Menu Hamburger */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgb(109, 50, 50);
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .right.show {
+        display: flex;
+    }
+
+    .right a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+/* Effet Flip Image */
+.flip-card {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.flip-card-back {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 12px;
+    padding: 15px;
+}
+/* Gallery en Flexbox */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permet de faire un retour à la ligne si nécessaire */
+    justify-content: space-around; /* Aligne les éléments avec un espacement égal */
+    gap: 10px; /* Espace entre les éléments */
+    margin: 2px;
+}
+
+/* Chaque item de la galerie */
+.gallery-item {
+    width: calc(16.66% - 10px); /* Chaque image occupe environ 1/6 de la ligne, ajusté pour l'espacement */
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* Effet de zoom au survol */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+
+/* Style du slider */
+.swiper {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Effet texte TypeWriter */
+.text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+/* Animation TypeWriter */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+/* Conteneur principal */
+.pricing-container {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Toggle switch */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Cartes de tarification */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.card-front {
+    background-color: #f8f8f8;
+}
+
+.card-back {
+    background-color: #4CAF50;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Prix */
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.yearly {
+    display: none;
+}
+
+/* Bouton */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
